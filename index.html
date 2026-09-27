@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Fake News Detection System</h1>
+
+        <p class="subtitle">
+            Analyze news using Machine Learning to classify it as Real or Fake.
+        </p>
+
+        <div class="box">
+
+            <h2>Enter News</h2>
+
+            <textarea
+                id="newsInput"
+                placeholder="Enter your news headline or article here..."></textarea>
+
+            <div class="buttons">
+                <button class="check-btn" onclick="checkNews()">
+                    Check News
+                </button>
+
+                <button class="clear-btn" onclick="clearNews()">
+                    Clear
+                </button>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div id="result">
+                <h2>Result</h2>
+                <p>Your result will appear here.</p>
+            </div>
+
+        </div>
+
+        <div class="box how-to-use">
+
+    <h2>How to Use</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>Step 1</h3>
+            <p>Enter a news headline or article in the text box.</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 2</h3>
+            <p>Click the "Check News" button to analyze the news.</p>
+        </div>
+
+        <div class="step">
+            <h3>Step 3</h3>
+            <p>View the predicted result and confidence level.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="box about-system">
+
+    <h2>About the System</h2>
+
+    <p>
+        This system uses Machine Learning to analyze news content and classify it as Real or Fake.
+        It uses TF-IDF for text feature extraction and Logistic Regression for classification.
+    </p>
+
+</div>
+
+        <div class="box">
+
+            <div id="history">
+                <h2>News Checking History</h2>
+            </div>
+
+            <button class="history-clear-btn" onclick="clearHistory()">
+                Clear History
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
